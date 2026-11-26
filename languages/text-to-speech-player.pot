@@ -1,0 +1,1547 @@
+# Copyright (C) 2026 Tanin's Dev
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Text to Speech Player – AI TTS & Audio Reader 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/text-to-speech-player\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-26T08:56:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: text-to-speech-player\n"
+
+#. Plugin Name of the plugin
+#: text-to-speech-player.php
+msgid "Text to Speech Player – AI TTS & Audio Reader"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: text-to-speech-player.php
+msgid "https://github.com/tanindev/text-to-speech-player"
+msgstr ""
+
+#. Description of the plugin
+#: text-to-speech-player.php
+msgid "Convert posts, pages, and products into natural-sounding speech with browser voices and cloud AI (OpenAI, Google Cloud, ElevenLabs)."
+msgstr ""
+
+#. Author of the plugin
+#: text-to-speech-player.php
+msgid "Tanin's Dev"
+msgstr ""
+
+#. Author URI of the plugin
+#: text-to-speech-player.php
+msgid "https://profiles.wordpress.org/tanindev/"
+msgstr ""
+
+#: includes/Admin/AdminMenu.php:29
+msgid "Settings"
+msgstr ""
+
+#: includes/Admin/AdminMenu.php:40
+#: includes/Admin/AdminMenu.php:41
+msgid "Text to Speech"
+msgstr ""
+
+#: includes/Admin/AdminMenu.php:61
+msgid "Loading Text to Speech Player..."
+msgstr ""
+
+#: includes/Admin/Assets.php:33
+msgid "Select or Upload MP3 Audio File"
+msgstr ""
+
+#: includes/Admin/Assets.php:34
+msgid "Use this Audio File"
+msgstr ""
+
+#: includes/Admin/Assets.php:84
+#: src/index.js:158
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: includes/Admin/Assets.php:85
+#: src/index.js:167
+msgid "Failed to save settings. Please try again."
+msgstr ""
+
+#: includes/Admin/Assets.php:86
+msgid "Test Speech"
+msgstr ""
+
+#: includes/Admin/Assets.php:87
+msgid "Generating audio..."
+msgstr ""
+
+#: includes/Admin/Assets.php:88
+msgid "Ready"
+msgstr ""
+
+#: includes/Admin/Assets.php:89
+msgid "Not Configured"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:47
+#: src/index.js:476
+msgid "Text to Speech Player"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:75
+msgid "Disable player on this post"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:84
+msgid "Custom Audio File (MP3):"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:88
+msgid "Choose / Upload MP3"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:92
+msgid "Remove"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:96
+msgid "If set, the player plays this studio MP3 instead of browser speech synthesis."
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:105
+msgid "Voice Override (Optional):"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:113
+msgid "Custom Spoken Intro:"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:115
+msgid "Spoken before article content"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:121
+msgid "Custom Spoken Outro:"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:123
+msgid "Spoken after article content"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:130
+msgid "Allow visitors to download MP3"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:218
+msgid "Audio Status"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:237
+#: src/index.js:3551
+#: src/index.js:5124
+msgid "Disabled"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:239
+msgid "Custom MP3"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:241
+msgid "Active (TTS)"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:252
+msgid "Audio: Enable Player"
+msgstr ""
+
+#: includes/Admin/PostMetabox.php:253
+msgid "Audio: Disable Player"
+msgstr ""
+
+#: includes/API/Controllers/PronunciationController.php:69
+msgid "Pronunciation dictionary updated."
+msgstr ""
+
+#: includes/API/Controllers/SettingsController.php:73
+#: includes/API/Controllers/SettingsController.php:88
+#: includes/API/Controllers/SettingsController.php:228
+#: includes/API/Controllers/SettingsController.php:241
+#: includes/Frontend/Player.php:222
+#: includes/Frontend/Player.php:359
+#: includes/Frontend/Shortcode.php:87
+#: templates/player-bar.php:63
+#: templates/player-bar.php:69
+#: src/index.js:2813
+#: src/index.js:2895
+#: src/index.js:2903
+msgid "Listen to this article"
+msgstr ""
+
+#: includes/API/Controllers/SettingsController.php:89
+#: includes/API/Controllers/SettingsController.php:242
+#: includes/Frontend/Player.php:223
+#: includes/Frontend/Player.php:438
+#: includes/Frontend/Shortcode.php:88
+#: templates/player-bar.php:64
+msgid "Pause"
+msgstr ""
+
+#: includes/API/Controllers/SettingsController.php:90
+#: includes/API/Controllers/SettingsController.php:243
+#: includes/Frontend/Player.php:224
+#: includes/Frontend/Player.php:439
+#: includes/Frontend/Shortcode.php:89
+#: templates/player-bar.php:65
+msgid "Resume"
+msgstr ""
+
+#: includes/API/Controllers/SettingsController.php:91
+#: includes/API/Controllers/SettingsController.php:244
+#: includes/Frontend/Player.php:225
+#: includes/Frontend/Player.php:440
+#: includes/Frontend/Shortcode.php:90
+#: templates/player-bar.php:66
+msgid "Listen again"
+msgstr ""
+
+#: includes/API/Controllers/SettingsController.php:144
+msgid "All settings reset to factory defaults successfully."
+msgstr ""
+
+#: includes/API/Controllers/SettingsController.php:159
+msgid "Invalid or empty settings data provided."
+msgstr ""
+
+#: includes/API/Controllers/SettingsController.php:303
+msgid "Settings updated successfully."
+msgstr ""
+
+#: includes/API/Controllers/SpeechController.php:91
+msgid "Unsupported AI provider specified."
+msgstr ""
+
+#: includes/API/Controllers/SpeechController.php:108
+msgid "Please provide a valid OpenAI API key in settings."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/API/Controllers/SpeechController.php:137
+#, php-format
+msgid "OpenAI API returned error code %d."
+msgstr ""
+
+#. translators: %d: Latency duration in milliseconds.
+#: includes/API/Controllers/SpeechController.php:152
+#, php-format
+msgid "OpenAI synthesis succeeded in %d ms."
+msgstr ""
+
+#: includes/API/Controllers/SpeechController.php:167
+msgid "Please provide a valid ElevenLabs API key in settings."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/API/Controllers/SpeechController.php:200
+#, php-format
+msgid "ElevenLabs API returned error code %d."
+msgstr ""
+
+#. translators: %d: Latency duration in milliseconds.
+#: includes/API/Controllers/SpeechController.php:215
+#, php-format
+msgid "ElevenLabs synthesis succeeded in %d ms."
+msgstr ""
+
+#: includes/API/Controllers/SpeechController.php:230
+msgid "Please provide a Google Cloud Text-to-Speech API key."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/API/Controllers/SpeechController.php:264
+#, php-format
+msgid "Google Cloud TTS returned error code %d."
+msgstr ""
+
+#. translators: %d: Latency duration in milliseconds.
+#: includes/API/Controllers/SpeechController.php:278
+#, php-format
+msgid "Google Cloud TTS synthesis succeeded in %d ms."
+msgstr ""
+
+#: includes/API/Controllers/SpeechController.php:295
+msgid "Please provide Amazon Polly AWS Access Key ID and Secret Access Key."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/API/Controllers/SpeechController.php:350
+#, php-format
+msgid "Amazon Polly API returned error code %d."
+msgstr ""
+
+#. translators: %d: Latency duration in milliseconds.
+#: includes/API/Controllers/SpeechController.php:365
+#, php-format
+msgid "Amazon Polly synthesis succeeded in %d ms."
+msgstr ""
+
+#: includes/API/Controllers/SpeechController.php:381
+msgid "Please specify a valid Custom AI Endpoint URL."
+msgstr ""
+
+#. translators: 1: HTTP status code, 2: Response body excerpt.
+#: includes/API/Controllers/SpeechController.php:415
+#, php-format
+msgid "Custom endpoint returned HTTP code %1$d: %2$s"
+msgstr ""
+
+#. translators: %d: Latency duration in milliseconds.
+#: includes/API/Controllers/SpeechController.php:442
+#, php-format
+msgid "Custom AI synthesis succeeded in %d ms."
+msgstr ""
+
+#: includes/Frontend/Block.php:40
+msgid "Audio Reader Player"
+msgstr ""
+
+#: includes/Frontend/Block.php:43
+msgid "Insert a stylish, customizable Text to Speech audio player into your content."
+msgstr ""
+
+#: includes/Frontend/Player.php:226
+msgid "Another audio player is currently playing"
+msgstr ""
+
+#: includes/Frontend/Player.php:237
+msgid "Audio playback started"
+msgstr ""
+
+#: includes/Frontend/Player.php:238
+msgid "Audio playback paused"
+msgstr ""
+
+#: includes/Frontend/Player.php:239
+msgid "Audio playback completed"
+msgstr ""
+
+#. translators: %d: Estimated listening time in minutes
+#: includes/Frontend/Player.php:414
+#: includes/Frontend/Shortcode.php:170
+#, php-format
+msgid "%d min listen"
+msgid_plural "%d min listen"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/player-bar.php:131
+msgid "Estimated listening time"
+msgstr ""
+
+#: templates/player-bar.php:146
+msgid "Click or drag to seek"
+msgstr ""
+
+#: templates/player-bar.php:146
+msgid "Audio progress track"
+msgstr ""
+
+#: templates/player-bar.php:153
+msgid "Rewind 10 seconds"
+msgstr ""
+
+#: templates/player-bar.php:159
+msgid "Forward 10 seconds"
+msgstr ""
+
+#: templates/player-bar.php:165
+msgid "Change playback speed"
+msgstr ""
+
+#: templates/player-bar.php:169
+msgid "Download audio MP3"
+msgstr ""
+
+#: src/index.js:190
+msgid "Pronunciation dictionary updated!"
+msgstr ""
+
+#: src/index.js:199
+msgid "Failed to update pronunciation dictionary."
+msgstr ""
+
+#: src/index.js:252
+msgid "Settings exported successfully!"
+msgstr ""
+
+#: src/index.js:276
+msgid "Settings imported successfully!"
+msgstr ""
+
+#: src/index.js:285
+msgid "Failed to import settings. Invalid JSON file."
+msgstr ""
+
+#: src/index.js:299
+msgid "Are you sure you want to reset all plugin settings to factory defaults? This action cannot be undone."
+msgstr ""
+
+#: src/index.js:319
+msgid "All settings reset to factory defaults!"
+msgstr ""
+
+#: src/index.js:328
+msgid "Failed to reset settings."
+msgstr ""
+
+#: src/index.js:433
+msgid "Synthesis succeeded, but no audio was returned."
+msgstr ""
+
+#: src/index.js:444
+msgid "Failed to synthesize speech via AI provider."
+msgstr ""
+
+#: src/index.js:482
+msgid "AI Audio Reader & Accessibility Settings"
+msgstr ""
+
+#: src/index.js:497
+msgid "Saving..."
+msgstr ""
+
+#: src/index.js:498
+msgid "Save Changes"
+msgstr ""
+
+#: src/index.js:531
+msgid "General"
+msgstr ""
+
+#: src/index.js:535
+msgid "Appearance"
+msgstr ""
+
+#: src/index.js:539
+msgid "Voice & Speech"
+msgstr ""
+
+#: src/index.js:546
+msgid "Pronunciation (Aliases)"
+msgstr ""
+
+#: src/index.js:553
+msgid "AI Providers (BYOK)"
+msgstr ""
+
+#: src/index.js:560
+msgid "Analytics"
+msgstr ""
+
+#: src/index.js:564
+msgid "System Status"
+msgstr ""
+
+#: src/index.js:571
+msgid "Tools & Backup"
+msgstr ""
+
+#: src/index.js:594
+msgid "Display & Placement"
+msgstr ""
+
+#: src/index.js:600
+msgid "Choose where the audio player should automatically appear on your website."
+msgstr ""
+
+#: src/index.js:609
+msgid "Enable on Post Types"
+msgstr ""
+
+#: src/index.js:674
+msgid "Player Position"
+msgstr ""
+
+#: src/index.js:684
+msgid "Before Post Content (Recommended)"
+msgstr ""
+
+#: src/index.js:691
+msgid "After Post Content"
+msgstr ""
+
+#: src/index.js:698
+msgid "Sticky (Fixed on Screen)"
+msgstr ""
+
+#: src/index.js:705
+msgid "Manual (Shortcode / Block Only)"
+msgstr ""
+
+#: src/index.js:743
+msgid "Sticky Screen Position & Coordinates"
+msgstr ""
+
+#: src/index.js:750
+msgid "Sticky Position"
+msgstr ""
+
+#: src/index.js:760
+#: src/index.js:1036
+msgid "Bottom Right (Default)"
+msgstr ""
+
+#: src/index.js:767
+#: src/index.js:1043
+msgid "Bottom Left"
+msgstr ""
+
+#: src/index.js:774
+msgid "Bottom Center"
+msgstr ""
+
+#: src/index.js:781
+msgid "Top Right"
+msgstr ""
+
+#: src/index.js:788
+msgid "Top Left"
+msgstr ""
+
+#: src/index.js:795
+msgid "Top Center"
+msgstr ""
+
+#: src/index.js:802
+msgid "Middle Left"
+msgstr ""
+
+#: src/index.js:809
+msgid "Middle Right"
+msgstr ""
+
+#: src/index.js:822
+msgid "Select which screen edge or corner the floating audio player attaches to."
+msgstr ""
+
+#: src/index.js:846
+msgid "Adjust X Position (Horizontal Offset)"
+msgstr ""
+
+#: src/index.js:904
+msgid "Distance from left/right screen edge."
+msgstr ""
+
+#: src/index.js:921
+msgid "Adjust Y Position (Vertical Offset)"
+msgstr ""
+
+#: src/index.js:979
+msgid "Distance from top/bottom screen edge."
+msgstr ""
+
+#: src/index.js:998
+msgid "Enable Sticky Floating Dock"
+msgstr ""
+
+#: src/index.js:1002
+msgid "The audio player smoothly docks to the bottom edge when readers scroll past it."
+msgstr ""
+
+#: src/index.js:1026
+msgid "Floating Dock Position"
+msgstr ""
+
+#: src/index.js:1050
+msgid "Sticky Top Bar"
+msgstr ""
+
+#: src/index.js:1077
+msgid "Enable Audio Schema (JSON-LD)"
+msgstr ""
+
+#: src/index.js:1081
+msgid "Generates AudioObject structured data for rich search results in Google."
+msgstr ""
+
+#: src/index.js:1103
+msgid "Disable Player on Front Page / Home Page"
+msgstr ""
+
+#: src/index.js:1107
+msgid "Prevent the audio player from automatically appearing on your main homepage or front page. Custom shortcodes will continue to work."
+msgstr ""
+
+#: src/index.js:1131
+msgid "Delete Data on Uninstall"
+msgstr ""
+
+#: src/index.js:1135
+msgid "Completely wipe plugin settings and dictionary when the plugin is deleted."
+msgstr ""
+
+#: src/index.js:1158
+msgid "Content Ingestion & Spoken Audio Options"
+msgstr ""
+
+#: src/index.js:1164
+msgid "Define what content is converted into audio, including titles, excerpts, custom intros, and target CSS containers."
+msgstr ""
+
+#: src/index.js:1178
+msgid "Include Post Title in Audio"
+msgstr ""
+
+#: src/index.js:1182
+msgid "Speaks the article title before the main article body."
+msgstr ""
+
+#: src/index.js:1195
+msgid "Include Post Excerpt in Audio"
+msgstr ""
+
+#: src/index.js:1199
+msgid "Speaks the post excerpt or summary before the main body."
+msgstr ""
+
+#: src/index.js:1218
+msgid "Spoken Intro Text (Spoken before content)"
+msgstr ""
+
+#: src/index.js:1223
+msgid "e.g. Welcome. Listening to an article by Our Team."
+msgstr ""
+
+#: src/index.js:1227
+msgid "Custom announcement spoken immediately before reading begins."
+msgstr ""
+
+#: src/index.js:1245
+msgid "Spoken Outro Text (Spoken after content)"
+msgstr ""
+
+#: src/index.js:1250
+msgid "e.g. Thank you for listening. Visit our website for more updates."
+msgstr ""
+
+#: src/index.js:1254
+msgid "Custom closing phrase spoken when article reading finishes."
+msgstr ""
+
+#: src/index.js:1272
+msgid "Theme Content Container Preset"
+msgstr ""
+
+#: src/index.js:1279
+msgid "Auto Detect (Recommended)"
+msgstr ""
+
+#: src/index.js:1286
+msgid "WordPress Block Themes (Twenty Twenty-Four, TT3)"
+msgstr ""
+
+#: src/index.js:1293
+msgid "Astra Theme"
+msgstr ""
+
+#: src/index.js:1300
+msgid "GeneratePress Theme"
+msgstr ""
+
+#: src/index.js:1307
+msgid "Kadence Theme"
+msgstr ""
+
+#: src/index.js:1314
+msgid "Elementor Page Builder"
+msgstr ""
+
+#: src/index.js:1321
+msgid "Divi Builder"
+msgstr ""
+
+#: src/index.js:1328
+msgid "Pre-configured content container selector for popular themes. Automatically locates the post body without typing CSS selectors."
+msgstr ""
+
+#: src/index.js:1343
+msgid "Target CSS Selectors (Optional)"
+msgstr ""
+
+#: src/index.js:1348
+msgid ".entry-content, .custom-article-body"
+msgstr ""
+
+#: src/index.js:1352
+msgid "Only read text inside these specific CSS selectors. Leave empty to automatically read standard post content."
+msgstr ""
+
+#: src/index.js:1367
+msgid "Exclude CSS Selectors"
+msgstr ""
+
+#: src/index.js:1374
+msgid ".ad-box, .social-share, .related-posts, .author-bio"
+msgstr ""
+
+#: src/index.js:1378
+msgid "Strip content matching these selectors before speech synthesis."
+msgstr ""
+
+#: src/index.js:1396
+msgid "Exclude HTML Tags"
+msgstr ""
+
+#: src/index.js:1405
+msgid "aside|figure|blockquote|script|style|figcaption|code|pre"
+msgstr ""
+
+#: src/index.js:1409
+msgid "Pipe-separated list of HTML tag names to omit from speech synthesis."
+msgstr ""
+
+#: src/index.js:1424
+msgid "Exclude Specific Words or Phrases"
+msgstr ""
+
+#: src/index.js:1429
+msgid ""
+"Sponsored Content\n"
+"Click here to read more\n"
+"Share on Twitter"
+msgstr ""
+
+#: src/index.js:1433
+msgid "Enter phrases or sentences to redact from the spoken audio (one per line or pipe-separated)."
+msgstr ""
+
+#: src/index.js:1452
+msgid "DOM Reading Mode (Dynamic Builder Fallback)"
+msgstr ""
+
+#: src/index.js:1456
+msgid "Extracts speakable content directly from the live browser DOM. Recommended if using Elementor, Divi, Bricks, or AJAX-rendered blocks."
+msgstr ""
+
+#: src/index.js:1479
+msgid "Audience Access & Playback Rules"
+msgstr ""
+
+#: src/index.js:1485
+msgid "Control visibility by user role, exclude individual posts, and manage background tab playback."
+msgstr ""
+
+#: src/index.js:1493
+msgid "Who Can See & Listen to Player"
+msgstr ""
+
+#: src/index.js:1506
+msgid "All Visitors (Public)"
+msgstr ""
+
+#: src/index.js:1513
+msgid "Logged-in Members Only"
+msgstr ""
+
+#: src/index.js:1520
+msgid "Administrators Only (Testing Mode)"
+msgstr ""
+
+#: src/index.js:1527
+msgid "Subscribers & Members Only"
+msgstr ""
+
+#: src/index.js:1539
+msgid "Restrict audio player to VIP members or keep it available to all public visitors."
+msgstr ""
+
+#: src/index.js:1551
+msgid "Exclude Specific Post IDs"
+msgstr ""
+
+#: src/index.js:1556
+msgid "e.g. 12, 45, 102"
+msgstr ""
+
+#: src/index.js:1560
+msgid "Comma-separated list of Post IDs where audio should never be displayed."
+msgstr ""
+
+#: src/index.js:1578
+msgid "Auto-Pause When Switching Browser Tabs"
+msgstr ""
+
+#: src/index.js:1582
+msgid "Automatically pauses speech synthesis when the visitor navigates away to another browser tab."
+msgstr ""
+
+#: src/index.js:1637
+msgid "Custom Shortcode & Play Button Guide"
+msgstr ""
+
+#: src/index.js:1644
+msgid "Display a custom audio reader button anywhere on your site: in pages, homepages, sidebars, widgets, or theme templates."
+msgstr ""
+
+#: src/index.js:1675
+msgid "1. Standard Player (Current Page/Post)"
+msgstr ""
+
+#: src/index.js:1687
+msgid "Converts and reads the current post or page content."
+msgstr ""
+
+#: src/index.js:1724
+msgid "2. Custom Spoken Text (Hero / Greeting)"
+msgstr ""
+
+#: src/index.js:1736
+msgid "Speaks custom arbitrary text instead of page body."
+msgstr ""
+
+#: src/index.js:1774
+msgid "3. Custom Labels & Styling Override"
+msgstr ""
+
+#: src/index.js:1786
+msgid "Customize theme, accent color, radius, and button text."
+msgstr ""
+
+#: src/index.js:1826
+msgid "4. Custom MP3 Audio File Player"
+msgstr ""
+
+#: src/index.js:1838
+msgid "Plays pre-recorded podcast or narration audio file."
+msgstr ""
+
+#: src/index.js:1877
+msgid "5. Enclosed Text Block"
+msgstr ""
+
+#: src/index.js:1889
+msgid "Wrap any specific paragraph or text inside shortcode tags."
+msgstr ""
+
+#: src/index.js:1927
+msgid "6. Sticky Fixed Floating Player"
+msgstr ""
+
+#: src/index.js:1939
+msgid "Attach a fixed floating player to any screen corner with custom X/Y coordinates."
+msgstr ""
+
+#: src/index.js:1978
+msgid "7. PHP Theme Template Integration"
+msgstr ""
+
+#: src/index.js:1990
+msgid "Directly embed in header.php, front-page.php, or single.php."
+msgstr ""
+
+#: src/index.js:2021
+msgid "Player Appearance & Theme"
+msgstr ""
+
+#: src/index.js:2027
+msgid "Customize the visual presentation of your audio reader button."
+msgstr ""
+
+#: src/index.js:2035
+msgid "Button Label"
+msgstr ""
+
+#: src/index.js:2044
+msgid "Leave blank for icon-only button"
+msgstr ""
+
+#: src/index.js:2048
+msgid "Text displayed on the audio player button. Leave completely blank for a compact, icon-only button."
+msgstr ""
+
+#: src/index.js:2078
+msgid "Dynamic Button State Labels"
+msgstr ""
+
+#: src/index.js:2091
+msgid "Listen / Initial Text"
+msgstr ""
+
+#: src/index.js:2106
+msgid "Playing / Pause Text"
+msgstr ""
+
+#: src/index.js:2116
+msgid "Paused / Resume Text"
+msgstr ""
+
+#: src/index.js:2126
+msgid "Completed / Replay Text"
+msgstr ""
+
+#: src/index.js:2145
+msgid "Show Estimated Listening Time Badge"
+msgstr ""
+
+#: src/index.js:2149
+msgid "Displays a smart reading time badge (e.g. 🎧 3 min listen) beside the player."
+msgstr ""
+
+#: src/index.js:2166
+msgid "Enable MP3 Download Button"
+msgstr ""
+
+#: src/index.js:2170
+msgid "Displays a direct download icon on the player when a custom MP3 audio file is uploaded to the post."
+msgstr ""
+
+#: src/index.js:2186
+msgid "Enable Keyboard Accessibility Shortcuts"
+msgstr ""
+
+#: src/index.js:2190
+msgid "Enables keyboard control (Space / K to play/pause, Left / Right arrows or J / L to rewind/fast-forward 10 seconds)."
+msgstr ""
+
+#: src/index.js:2214
+msgid "Color Theme"
+msgstr ""
+
+#: src/index.js:2223
+msgid "Modern Light (Default)"
+msgstr ""
+
+#: src/index.js:2230
+msgid "Dark Glassmorphism"
+msgstr ""
+
+#: src/index.js:2237
+msgid "Solid Accent (Filled Background)"
+msgstr ""
+
+#: src/index.js:2244
+msgid "Minimalist Outline"
+msgstr ""
+
+#: src/index.js:2251
+msgid "Soft Pastel Tint"
+msgstr ""
+
+#: src/index.js:2266
+msgid "Accent Color"
+msgstr ""
+
+#: src/index.js:2343
+msgid "Button Border Radius"
+msgstr ""
+
+#: src/index.js:2350
+msgid "Pill (Full Rounded - 9999px)"
+msgstr ""
+
+#: src/index.js:2357
+msgid "Large Rounded (16px)"
+msgstr ""
+
+#: src/index.js:2364
+msgid "Medium Rounded (8px)"
+msgstr ""
+
+#: src/index.js:2371
+msgid "Slight Rounded / Sharp (4px)"
+msgstr ""
+
+#: src/index.js:2378
+msgid "Square (0px)"
+msgstr ""
+
+#: src/index.js:2393
+msgid "Button Size"
+msgstr ""
+
+#: src/index.js:2400
+msgid "Small (Compact)"
+msgstr ""
+
+#: src/index.js:2407
+msgid "Medium (Standard)"
+msgstr ""
+
+#: src/index.js:2414
+msgid "Large (Prominent)"
+msgstr ""
+
+#: src/index.js:2435
+msgid "Read-Along Synchronized Highlighting"
+msgstr ""
+
+#: src/index.js:2439
+msgid "Highlights text on the page in real-time as the speech engine reads it."
+msgstr ""
+
+#: src/index.js:2460
+msgid "Highlighting Mode"
+msgstr ""
+
+#: src/index.js:2469
+msgid "Word Only (Highlights active word)"
+msgstr ""
+
+#: src/index.js:2476
+msgid "Sentence Only (Tints active sentence)"
+msgstr ""
+
+#: src/index.js:2483
+msgid "Dual Mode: Sentence Background + Word Focus (AtlasVoice Signature)"
+msgstr ""
+
+#: src/index.js:2507
+msgid "Sentence Background Color"
+msgstr ""
+
+#: src/index.js:2606
+msgid "Word Focus Highlight Color"
+msgstr ""
+
+#: src/index.js:2704
+msgid "Focus Dimming (ADHD & Dyslexia Friendly)"
+msgstr ""
+
+#: src/index.js:2708
+msgid "Gently reduces opacity of non-spoken article paragraphs during playback for maximum reading concentration."
+msgstr ""
+
+#: src/index.js:2727
+msgid "Inactive Text Opacity"
+msgstr ""
+
+#: src/index.js:2772
+msgid "Enable Floating Selection Reader (\"Listen to selection\")"
+msgstr ""
+
+#: src/index.js:2776
+msgid "Displays a floating \"Listen\" tooltip when readers highlight any text with their cursor."
+msgstr ""
+
+#: src/index.js:2833
+msgid "Live Player Preview"
+msgstr ""
+
+#: src/index.js:2846
+msgid "🔊 Playing Audio..."
+msgstr ""
+
+#: src/index.js:2850
+msgid "Interactive Preview"
+msgstr ""
+
+#: src/index.js:3030
+msgid "Read-Along Real-Time Preview"
+msgstr ""
+
+#: src/index.js:3091
+msgid "Click the player above to preview playback, voice synthesis, and real-time animation."
+msgstr ""
+
+#: src/index.js:3123
+msgid "Voice & Speech Engine"
+msgstr ""
+
+#: src/index.js:3129
+msgid "Configure your default speech synthesis engine, voices, and playback speeds."
+msgstr ""
+
+#: src/index.js:3137
+msgid "Default Speech Engine"
+msgstr ""
+
+#: src/index.js:3144
+msgid "Free Browser Web Speech (Zero API Cost)"
+msgstr ""
+
+#: src/index.js:3151
+msgid "Cloud AI Voice (OpenAI / ElevenLabs)"
+msgstr ""
+
+#: src/index.js:3167
+msgid "Default System Voice"
+msgstr ""
+
+#: src/index.js:3174
+msgid "Default System Voice (Auto-detect user language)"
+msgstr ""
+
+#: src/index.js:3199
+msgid "Test Selected Voice"
+msgstr ""
+
+#: src/index.js:3209
+msgid "Default Playback Rate (Speed)"
+msgstr ""
+
+#: src/index.js:3250
+msgid "Default Pitch"
+msgstr ""
+
+#: src/index.js:3287
+msgid "Add Pronunciation Alias"
+msgstr ""
+
+#: src/index.js:3293
+msgid "Map abbreviations, acronyms, and technical jargon to exact phonetic pronunciations."
+msgstr ""
+
+#: src/index.js:3313
+msgid "Original Word / Acronym"
+msgstr ""
+
+#: src/index.js:3327
+msgid "Spoken Pronunciation"
+msgstr ""
+
+#: src/index.js:3367
+msgid "Apply to numbers (e.g. \"5k\" ➔ \"5 thousand\", \"250k\" ➔ \"250 thousand\")"
+msgstr ""
+
+#: src/index.js:3384
+msgid "+ Add to Dictionary"
+msgstr ""
+
+#: src/index.js:3408
+msgid "Active Pronunciation Rules"
+msgstr ""
+
+#: src/index.js:3423
+msgid "Clear All Rules"
+msgstr ""
+
+#: src/index.js:3447
+msgid "No custom pronunciation aliases added yet."
+msgstr ""
+
+#: src/index.js:3485
+msgid "Load Common Tech Acronyms"
+msgstr ""
+
+#: src/index.js:3496
+msgid "Original Word"
+msgstr ""
+
+#: src/index.js:3502
+msgid "Pronounced As"
+msgstr ""
+
+#: src/index.js:3508
+msgid "Numbers Mode"
+msgstr ""
+
+#: src/index.js:3514
+msgid "Audio Test"
+msgstr ""
+
+#: src/index.js:3522
+msgid "Action"
+msgstr ""
+
+#: src/index.js:3544
+#: src/index.js:5110
+msgid "Enabled"
+msgstr ""
+
+#: src/index.js:3568
+msgid "Listen"
+msgstr ""
+
+#: src/index.js:3588
+msgid "Delete"
+msgstr ""
+
+#: src/index.js:3619
+msgid "AI Neural Speech Engine (BYOK & Custom API)"
+msgstr ""
+
+#: src/index.js:3625
+msgid "Connect top neural AI voice providers or self-hosted audio models for human-quality narration."
+msgstr ""
+
+#: src/index.js:3645
+msgid "Active Cloud Engine:"
+msgstr ""
+
+#: src/index.js:3745
+msgid "Configured"
+msgstr ""
+
+#: src/index.js:3749
+msgid "Not Set"
+msgstr ""
+
+#: src/index.js:3769
+msgid "Default Engine"
+msgstr ""
+
+#: src/index.js:3801
+msgid "Current Selected Provider:"
+msgstr ""
+
+#: src/index.js:3823
+msgid "This provider is currently set as your primary Cloud AI speech engine."
+msgstr ""
+
+#: src/index.js:3827
+msgid "Click the button on the right to set this provider as your primary Cloud AI engine."
+msgstr ""
+
+#: src/index.js:3853
+msgid "✓ Default Engine"
+msgstr ""
+
+#: src/index.js:3857
+msgid "Set as Default Engine"
+msgstr ""
+
+#: src/index.js:3871
+msgid "OpenAI TTS Configuration"
+msgstr ""
+
+#: src/index.js:3877
+msgid "Generate speech using OpenAI text-to-speech API (tts-1 and tts-1-hd)."
+msgstr ""
+
+#: src/index.js:3885
+msgid "OpenAI API Key"
+msgstr ""
+
+#: src/index.js:3900
+msgid "Your secret key is stored securely in the WordPress database and never exposed publicly."
+msgstr ""
+
+#: src/index.js:3909
+msgid "OpenAI Model"
+msgstr ""
+
+#: src/index.js:3918
+msgid "tts-1 (Standard - Ultra-Low Latency & Fast)"
+msgstr ""
+
+#: src/index.js:3925
+msgid "tts-1-hd (High Definition - Studio Broadcast Quality)"
+msgstr ""
+
+#: src/index.js:3943
+msgid "OpenAI Voice Persona"
+msgstr ""
+
+#: src/index.js:3991
+msgid "ElevenLabs Prime Voice AI Configuration"
+msgstr ""
+
+#: src/index.js:3997
+msgid "Lifelike human speech with unmatched emotional range and accent fidelity."
+msgstr ""
+
+#: src/index.js:4005
+msgid "ElevenLabs API Key"
+msgstr ""
+
+#: src/index.js:4026
+msgid "ElevenLabs Model"
+msgstr ""
+
+#: src/index.js:4059
+msgid "Preset Voice Persona"
+msgstr ""
+
+#: src/index.js:4108
+msgid "Custom Voice ID (Optional)"
+msgstr ""
+
+#: src/index.js:4117
+msgid "Enter any cloned or custom community voice ID from your ElevenLabs VoiceLab."
+msgstr ""
+
+#: src/index.js:4136
+msgid "Google Cloud Text-to-Speech Configuration"
+msgstr ""
+
+#: src/index.js:4142
+msgid "Synthesize natural-sounding speech with 220+ voices powered by Google DeepMind WaveNet & Journey models."
+msgstr ""
+
+#: src/index.js:4150
+msgid "Google Cloud API Key"
+msgstr ""
+
+#: src/index.js:4166
+msgid "Obtained from Google Cloud Console under APIs & Services > Credentials."
+msgstr ""
+
+#: src/index.js:4175
+msgid "Google Voice Model"
+msgstr ""
+
+#: src/index.js:4220
+msgid "Language Code"
+msgstr ""
+
+#: src/index.js:4244
+msgid "Amazon Polly (AWS) Configuration"
+msgstr ""
+
+#: src/index.js:4250
+msgid "Turn text into lifelike speech using Amazon Polly neural voices with high global availability."
+msgstr ""
+
+#: src/index.js:4258
+msgid "AWS Access Key ID"
+msgstr ""
+
+#: src/index.js:4277
+msgid "AWS Secret Access Key"
+msgstr ""
+
+#: src/index.js:4297
+msgid "AWS Region"
+msgstr ""
+
+#: src/index.js:4342
+msgid "Polly Voice Persona"
+msgstr ""
+
+#: src/index.js:4395
+msgid "Custom AI Provider (OpenAI-Compatible & Self-Hosted)"
+msgstr ""
+
+#: src/index.js:4401
+msgid "Connect any OpenAI-compatible API, Groq, Cartesia, Deepgram, LMNT, or self-hosted audio server (Kokoro, Piper, Coqui XTTS)."
+msgstr ""
+
+#: src/index.js:4409
+msgid "Custom Provider Name"
+msgstr ""
+
+#: src/index.js:4428
+msgid "Custom Endpoint URL"
+msgstr ""
+
+#: src/index.js:4437
+msgid "The full REST endpoint accepting POST requests for audio speech synthesis."
+msgstr ""
+
+#: src/index.js:4452
+msgid "API Key / Bearer Token (Optional)"
+msgstr ""
+
+#: src/index.js:4472
+msgid "Model Name / ID"
+msgstr ""
+
+#: src/index.js:4492
+msgid "Voice Name / Persona"
+msgstr ""
+
+#: src/index.js:4526
+msgid "AI Neural Synthesizer Playground"
+msgstr ""
+
+#: src/index.js:4532
+msgid "Test synthetic speech generation with real-time audio playback and latency benchmarking."
+msgstr ""
+
+#: src/index.js:4539
+msgid "Testing Target:"
+msgstr ""
+
+#: src/index.js:4564
+msgid "Try Sample:"
+msgstr ""
+
+#: src/index.js:4578
+msgid "👋 Welcome Greeting"
+msgstr ""
+
+#: src/index.js:4592
+msgid "📰 Breaking News"
+msgstr ""
+
+#: src/index.js:4606
+msgid "📈 SEO & Accessibility"
+msgstr ""
+
+#: src/index.js:4620
+msgid "Enter text to synthesize into high-fidelity neural audio..."
+msgstr ""
+
+#: src/index.js:4656
+msgid "Synthesizing Neural Audio..."
+msgstr ""
+
+#: src/index.js:4660
+msgid "Synthesize via"
+msgstr ""
+
+#: src/index.js:4672
+msgid "🔊 Test via Browser Speech"
+msgstr ""
+
+#: src/index.js:4693
+msgid "Notice:"
+msgstr ""
+
+#: src/index.js:4709
+msgid "Synthesis Complete"
+msgstr ""
+
+#: src/index.js:4750
+msgid "Loading playback analytics..."
+msgstr ""
+
+#: src/index.js:4762
+msgid "Total Listens"
+msgstr ""
+
+#: src/index.js:4771
+msgid "Player activations across all posts"
+msgstr ""
+
+#: src/index.js:4779
+msgid "Estimated Audio Served"
+msgstr ""
+
+#: src/index.js:4797
+msgid "Total visitor engagement time"
+msgstr ""
+
+#: src/index.js:4805
+msgid "Average Completion Rate"
+msgstr ""
+
+#: src/index.js:4816
+msgid "Estimated article listen completion"
+msgstr ""
+
+#: src/index.js:4827
+msgid "Top Spoken Posts & Articles"
+msgstr ""
+
+#: src/index.js:4833
+msgid "Articles and pages with the highest audio listener activity."
+msgstr ""
+
+#: src/index.js:4856
+msgid "No audio play events recorded yet. Once visitors click \"Listen\" on your articles, statistics will appear here."
+msgstr ""
+
+#: src/index.js:4867
+msgid "Post Title"
+msgstr ""
+
+#: src/index.js:4873
+msgid "Published Date"
+msgstr ""
+
+#: src/index.js:4879
+msgid "Listens"
+msgstr ""
+
+#: src/index.js:4889
+msgid "Actions"
+msgstr ""
+
+#: src/index.js:4931
+msgid "plays"
+msgstr ""
+
+#: src/index.js:4949
+msgid "Edit Post"
+msgstr ""
+
+#: src/index.js:4971
+msgid "System & Compatibility Status"
+msgstr ""
+
+#: src/index.js:4977
+msgid "Health check of your server environment and browser capabilities."
+msgstr ""
+
+#: src/index.js:5002
+msgid "Browser SpeechSynthesis API:"
+msgstr ""
+
+#: src/index.js:5021
+msgid "Supported ("
+msgstr ""
+
+#: src/index.js:5026
+msgid "system voices detected)"
+msgstr ""
+
+#: src/index.js:5040
+msgid "Not supported in this browser"
+msgstr ""
+
+#: src/index.js:5059
+msgid "PHP Version:"
+msgstr ""
+
+#: src/index.js:5080
+msgid "WordPress Version:"
+msgstr ""
+
+#: src/index.js:5101
+msgid "OpenSSL Extension:"
+msgstr ""
+
+#: src/index.js:5143
+msgid "Memory Limit:"
+msgstr ""
+
+#: src/index.js:5164
+msgid "Max Execution Time:"
+msgstr ""
+
+#: src/index.js:5183
+msgid "Settings Backup, Migration & Tools"
+msgstr ""
+
+#: src/index.js:5189
+msgid "Export configurations to JSON for easy staging-to-production migration, import backups, or reset settings."
+msgstr ""
+
+#: src/index.js:5221
+msgid "Export Settings Backup"
+msgstr ""
+
+#: src/index.js:5234
+msgid "Download a complete JSON file containing all player appearance presets, audio filtering rules, and AI configurations."
+msgstr ""
+
+#: src/index.js:5243
+msgid "Export Settings (JSON)"
+msgstr ""
+
+#: src/index.js:5268
+msgid "Import Settings Backup"
+msgstr ""
+
+#: src/index.js:5281
+msgid "Upload a previously saved .json settings file to restore your configuration on this site."
+msgstr ""
+
+#: src/index.js:5293
+msgid "Select JSON File to Import"
+msgstr ""
+
+#: src/index.js:5326
+msgid "Danger Zone: Factory Reset"
+msgstr ""
+
+#: src/index.js:5339
+msgid "Reset all Text to Speech Player settings back to clean initial factory defaults. Custom styling and filtering rules will be restored to original settings."
+msgstr ""
+
+#: src/index.js:5349
+msgid "Reset All Settings to Factory Defaults"
+msgstr ""

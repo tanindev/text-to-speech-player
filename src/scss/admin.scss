@@ -1,0 +1,529 @@
+// Admin Styling for Text to Speech Player (Matching DriveVault Design System)
+@import './player.scss';
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$primary: #1a73e8;
+$primary-hover: #1557d0;
+$primary-light: #e8f0fe;
+$gray-50: #f8fafc;
+$gray-100: #f1f5f9;
+$gray-200: #e2e8f0;
+$gray-300: #cbd5e1;
+$gray-400: #94a3b8;
+$gray-500: #64748b;
+$gray-600: #475569;
+$gray-700: #334155;
+$gray-900: #0f172a;
+$success: #137333;
+$danger: #d93025;
+
+// Page-level wrapper reset and notice isolation
+body.toplevel_page_tts-player-settings,
+body:has(.tts-player-admin-wrap) {
+	#wpcontent {
+		padding-left: 0 !important;
+	}
+
+	#wpbody {
+		padding-top: 0 !important;
+	}
+
+	#wpbody-content {
+		padding: 0 !important;
+	}
+
+	// Suppress raw notices from disrupting the dashboard layout
+	#wpbody-content > .notice:not(.tts-captured),
+	#wpbody-content > .updated:not(.tts-captured),
+	#wpbody-content > .error:not(.tts-captured),
+	#wpbody-content > .update-nag:not(.tts-captured),
+	#wpbody-content > div[class*="notice"]:not(.tts-captured):not([class*="tts-player"]),
+	#wpbody-content > .is-dismissible:not(.tts-captured),
+	#tts-player-notices-staging,
+	.wrap.tts-player-admin-wrap .notice:not(.tts-captured):not([class*="tts-player"]),
+	.wrap.tts-player-admin-wrap .updated:not(.tts-captured),
+	.wrap.tts-player-admin-wrap .error:not(.tts-captured) {
+		display: none !important;
+	}
+
+	.wrap.tts-player-admin-wrap {
+		margin: 0 !important;
+		padding: 0 !important;
+		max-width: none !important;
+		background: #f8fafc;
+		min-height: 100vh;
+		font-family: $font-family;
+	}
+}
+
+.tts-app-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 24px 32px;
+}
+
+// DriveVault-Style Header
+.tts-admin-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #ffffff;
+	border-bottom: 1px solid $gray-200;
+	padding: 18px 32px;
+
+	.tts-header-left {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+
+		.tts-logo-badge {
+			width: 44px;
+			height: 44px;
+			border-radius: 10px;
+			background: linear-gradient(135deg, $primary 0%, #3b82f6 100%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffffff;
+			box-shadow: 0 4px 10px rgba(26, 115, 232, 0.25);
+		}
+
+		.tts-header-titles {
+			h1 {
+				margin: 0;
+				font-size: 20px;
+				font-weight: 700;
+				color: $gray-900;
+				line-height: 1.2;
+			}
+			p {
+				margin: 3px 0 0;
+				font-size: 13px;
+				color: $gray-500;
+			}
+		}
+	}
+
+	.tts-header-actions {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+}
+
+// DriveVault-Style Tabs
+.tts-tabs-nav {
+	display: flex;
+	gap: 6px;
+	border-bottom: 1px solid $gray-200;
+	margin-bottom: 24px;
+	overflow-x: auto;
+
+	.tts-tab-item {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		padding: 12px 18px;
+		font-size: 14px;
+		font-weight: 600;
+		color: $gray-600;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid transparent;
+		cursor: pointer;
+		transition: all 0.2s ease;
+		text-decoration: none;
+		white-space: nowrap;
+
+		&:hover {
+			color: $primary;
+		}
+
+		&.active {
+			color: $primary;
+			border-bottom-color: $primary;
+		}
+	}
+}
+
+// Cards & Form Elements
+.tts-card {
+	background: #ffffff;
+	border: 1px solid $gray-200;
+	border-radius: 12px;
+	padding: 24px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+
+	.tts-card-title {
+		font-size: 16px;
+		font-weight: 700;
+		color: $gray-900;
+		margin: 0 0 6px;
+	}
+
+	.tts-card-desc {
+		font-size: 13px;
+		color: $gray-500;
+		margin: 0 0 20px;
+	}
+}
+
+.tts-form-row {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-bottom: 18px;
+
+	label {
+		font-size: 13px;
+		font-weight: 600;
+		color: $gray-700;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	textarea,
+	select {
+		padding: 8px 12px;
+		border: 1px solid $gray-300;
+		border-radius: 6px;
+		font-size: 14px;
+		max-width: 540px;
+		box-sizing: border-box;
+
+		&:focus {
+			border-color: $primary;
+			box-shadow: 0 0 0 1px $primary;
+			outline: none;
+		}
+	}
+}
+
+// Metric Stat Boxes
+.tts-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 16px;
+	margin-bottom: 24px;
+
+	.tts-stat-card {
+		background: #ffffff;
+		border: 1px solid $gray-200;
+		border-radius: 12px;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+
+		.tts-stat-label {
+			font-size: 12px;
+			font-weight: 600;
+			color: $gray-500;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+		}
+
+		.tts-stat-value {
+			font-size: 26px;
+			font-weight: 800;
+			color: $gray-900;
+			line-height: 1.1;
+		}
+
+		.tts-stat-sub {
+			font-size: 12px;
+			color: $gray-400;
+		}
+	}
+}
+
+// Data Tables (DriveVault Style)
+.tts-data-table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid $gray-200;
+	border-radius: 8px;
+	overflow: hidden;
+
+	th {
+		background: $gray-50;
+		padding: 12px 16px;
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $gray-500;
+		letter-spacing: 0.5px;
+		border-bottom: 1px solid $gray-200;
+		text-align: left;
+	}
+
+	td {
+		padding: 12px 16px;
+		font-size: 13px;
+		color: $gray-700;
+		border-bottom: 1px solid $gray-100;
+		vertical-align: middle;
+	}
+
+	tr:last-child td {
+		border-bottom: none;
+	}
+
+	tr:hover td {
+		background: #fbfcfe;
+	}
+}
+
+// Badges
+.tts-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 3px 10px;
+	border-radius: 9999px;
+	font-size: 12px;
+	font-weight: 600;
+
+	&.tts-badge-success {
+		background: #def7ec;
+		color: #03543f;
+	}
+
+	&.tts-badge-secondary {
+		background: #f1f5f9;
+		color: #475569;
+	}
+}
+
+// Interactive Live Player Preview in Admin
+.tts-admin-player-preview {
+	margin-top: 24px;
+	border-radius: 12px;
+	border: 1px solid $gray-200;
+	background: #ffffff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+
+	.tts-preview-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 12px 20px;
+		background: $gray-50;
+		border-bottom: 1px solid $gray-200;
+
+		.tts-preview-title {
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $gray-600;
+			letter-spacing: 0.5px;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		}
+
+		.tts-preview-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			font-size: 11px;
+			font-weight: 600;
+			padding: 2px 10px;
+			border-radius: 9999px;
+			background: $primary-light;
+			color: $primary;
+
+			&.tts-playing {
+				background: #def7ec;
+				color: #03543f;
+			}
+		}
+	}
+
+	.tts-preview-stage {
+		padding: 36px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: radial-gradient(circle at center, #ffffff 0%, #f8fafc 100%);
+		min-height: 120px;
+		transition: all 0.3s ease;
+
+		&.tts-stage-dark {
+			background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+		}
+
+		.tts-player-container {
+			margin: 0 !important;
+		}
+	}
+
+	.tts-preview-footer {
+		padding: 10px 20px;
+		background: $gray-50;
+		border-top: 1px solid $gray-200;
+		font-size: 12px;
+		color: $gray-500;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+// AI Provider Hub & Provider Selection Cards
+.tts-provider-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 14px;
+	margin: 20px 0;
+
+	.tts-provider-card {
+		background: #ffffff;
+		border: 2px solid $gray-200;
+		border-radius: 12px;
+		padding: 16px;
+		cursor: pointer;
+		transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: left;
+		position: relative;
+		min-height: 120px;
+
+		&:hover {
+			border-color: $gray-300;
+			transform: translateY(-2px);
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+		}
+
+		&.tts-active {
+			border-color: $primary;
+			background: #f8fbff;
+			box-shadow: 0 4px 12px rgba(26, 115, 232, 0.12);
+		}
+
+		.tts-card-top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 10px;
+
+			.tts-provider-icon {
+				width: 38px;
+				height: 38px;
+				border-radius: 8px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 18px;
+				font-weight: 700;
+			}
+		}
+
+		.tts-provider-name {
+			font-size: 15px;
+			font-weight: 700;
+			color: $gray-900;
+			margin: 0 0 4px;
+		}
+
+		.tts-provider-sub {
+			font-size: 12px;
+			color: $gray-500;
+			margin: 0;
+			line-height: 1.3;
+		}
+
+		.tts-status-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 4px;
+			font-size: 11px;
+			font-weight: 600;
+			padding: 2px 8px;
+			border-radius: 9999px;
+
+			&.configured {
+				background: #def7ec;
+				color: #03543f;
+			}
+
+			&.unconfigured {
+				background: #f1f5f9;
+				color: #64748b;
+			}
+
+			&.active-tag {
+				background: $primary-light;
+				color: $primary;
+			}
+		}
+	}
+}
+
+// AI Synthesizer Playground
+.tts-synthesizer-box {
+	background: #ffffff;
+	border: 1px solid $gray-200;
+	border-radius: 12px;
+	padding: 24px;
+	margin-top: 24px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+	.tts-quick-prompts {
+		display: flex;
+		gap: 8px;
+		flex-wrap: wrap;
+		margin: 10px 0 16px;
+
+		.tts-prompt-pill {
+			background: $gray-100;
+			border: 1px solid $gray-200;
+			border-radius: 9999px;
+			padding: 4px 12px;
+			font-size: 12px;
+			color: $gray-700;
+			cursor: pointer;
+			transition: all 0.15s ease;
+
+			&:hover {
+				background: #e2e8f0;
+				color: $gray-900;
+			}
+		}
+	}
+
+	.tts-audio-player-result {
+		margin-top: 18px;
+		padding: 16px;
+		background: #f0fdf4;
+		border: 1px solid #bbf7d0;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+
+		audio {
+			width: 100%;
+			height: 40px;
+		}
+
+		.tts-result-meta {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 12px;
+			color: #166534;
+			font-weight: 500;
+		}
+	}
+}
